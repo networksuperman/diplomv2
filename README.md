@@ -1,5 +1,7 @@
 # diplomv2  
 ## Доработки по диплому  
+---
+# Инфраструктура и K8s кластер  
 
 Так как в первой версии я уже создавал инфраструктуру и устанавливал кластер через terraform и kubespray и в качестве registry использовал DockerHub, решил попробовать через Managed Kubernetes и Container Registry.  
 
@@ -14,14 +16,15 @@
 Проверим кластер  
 
 ![](https://github.com/networksuperman/diplomv2/blob/main/img/2.png)  
-
+---
+# Приложение
 Наш образ, регистри создал через terraform  
 
 [terraform registry](https://github.com/networksuperman/diplomv2/blob/main/terraform/registry.tf)  
 
 ![](https://github.com/networksuperman/diplomv2/blob/main/img/11.png)  
-
-Мониторинг 
+---
+# Мониторинг 
 
 kube-prometheus задеплоим через Github Actions, отслеживание изменений в terraform также сделаем через CI/CD  
 
@@ -36,8 +39,8 @@ kube-prometheus задеплоим через Github Actions, отслежива
 [k8s-ci-cd.yaml](https://github.com/networksuperman/app/blob/main/.github/workflows/k8s-ci-cd.yaml]  
 
 ![](https://github.com/networksuperman/diplomv2/blob/main/img/15.png)  
-
-CI/CD  
+---
+# CI/CD  
 
 [deploy app job](https://github.com/networksuperman/app/actions/runs/10305766738/job/28527362904)  
 
@@ -53,5 +56,9 @@ CI/CD
 
 ![](https://github.com/networksuperman/diplomv2/blob/main/img/12.png)    
 
+[app](http://51.250.36.50/)  
 
+[grafana](http://51.250.36.50:3000)  
+
+С вашего позволения так как грант на исходе, кластер выключу, сделал скриншоты  
 
