@@ -20,6 +20,8 @@
 # Приложение
 Наш образ, регистри создал через terraform  
 
+[Приложение](https://github.com/networksuperman/app.git)  
+
 [terraform registry](https://github.com/networksuperman/diplomv2/blob/main/terraform/registry.tf)  
 
 ![](https://github.com/networksuperman/diplomv2/blob/main/img/11.png)  
@@ -36,7 +38,7 @@ kube-prometheus задеплоим через Github Actions, отслежива
 
 [deploy_kube_prometheus.yml](https://github.com/networksuperman/app/blob/main/.github/workflows/deploy_kube_prometheus.yml)  
 
-[k8s-ci-cd.yaml](https://github.com/networksuperman/app/blob/main/.github/workflows/k8s-ci-cd.yaml]  
+[k8s-ci-cd.yaml](https://github.com/networksuperman/app/blob/main/.github/workflows/k8s-ci-cd.yaml)  
 
 ![](https://github.com/networksuperman/diplomv2/blob/main/img/15.png)  
 ---
