@@ -1,23 +1,34 @@
 # diplomv2  
-## Доработки по диплому  
+# Доработки по диплому  
 ---
-# Инфраструктура и K8s кластер  
+## Инфраструктура 
 
 Так как в первой версии я уже создавал инфраструктуру и устанавливал кластер через terraform и kubespray и в качестве registry использовал DockerHub, решил попробовать через Managed Kubernetes и Container Registry.  
 
 Вся инфраструктура, в том числе бакет, создавалась через terraform  
 
-[terraform](https://github.com/networksuperman/diplomv2/tree/main/terraform)  
+[terraform bucket sa](https://github.com/networksuperman/diplomv2/tree/main/bucket)
+
+![](https://github.com/networksuperman/diplomv2/blob/main/img/17.png)  
+
+![](https://github.com/networksuperman/diplomv2/blob/main/img/18.png)  
+
+---
+## K8s кластер  
+
+[terraform k8s](https://github.com/networksuperman/diplomv2/tree/main/terraform)
 
 В результате работы terraform мы получаем следующие ресурсы (LoadBalancer будет создан после деплоя мониторинга и приложения через CICD, но я сразу приложу полный скрин)  
 
 ![](https://github.com/networksuperman/diplomv2/blob/main/img/4.png)  
 
+![](https://github.com/networksuperman/diplomv2/blob/main/img/19.png)  
+
 Проверим кластер  
 
 ![](https://github.com/networksuperman/diplomv2/blob/main/img/2.png)  
 ---
-# Приложение
+## Приложение
 Наш образ, регистри создал через terraform  
 
 [Приложение](https://github.com/networksuperman/app.git)  
