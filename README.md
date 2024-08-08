@@ -23,3 +23,22 @@
 
 Мониторинг 
 
+kube-prometheus задеплоим через Github Actions, отслеживание изменений в terraform также сделаем через CI/CD
+
+[deploy monitoring job](https://github.com/networksuperman/app/actions/runs/10305603510/job/28526821910)
+
+![](https://github.com/networksuperman/diplomv2/blob/main/img/14.png)  
+
+[deploy terraform job](https://github.com/networksuperman/app/actions/runs/10305568254/job/28526704608]
+
+[deploy_kube_prometheus.yml]https://github.com/networksuperman/app/blob/main/.github/workflows/deploy_kube_prometheus.yml
+
+[k8s-ci-cd.yaml](https://github.com/networksuperman/app/blob/main/.github/workflows/k8s-ci-cd.yaml]
+
+![](https://github.com/networksuperman/diplomv2/blob/main/img/15.png)
+
+
+
+
+
+
