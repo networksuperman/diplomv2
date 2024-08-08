@@ -59,7 +59,7 @@ kube-prometheus задеплоим через Github Actions, отслежива
 
 ![](https://github.com/networksuperman/diplomv2/blob/main/img/13.png)    
 
-[deploy murge request dev](https://github.com/networksuperman/app/actions/runs/10305796263]  
+[deploy murge request dev](https://github.com/networksuperman/app/actions/runs/10305796263)  
 
 ![](https://github.com/networksuperman/diplomv2/blob/main/img/16.png)    
 
@@ -74,4 +74,6 @@ kube-prometheus задеплоим через Github Actions, отслежива
 [grafana](http://51.250.36.50:3000)  
 
 С вашего позволения так как грант на исходе, кластер выключу, сделал скриншоты  
+
+P.S. постарался особо воды не лить, только по делу
 
