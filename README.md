@@ -18,7 +18,7 @@
 
 [terraform k8s](https://github.com/networksuperman/diplomv2/tree/main/terraform)
 
-В результате работы terraform мы получаем следующие ресурсы (LoadBalancer будет создан после деплоя мониторинга и приложения через CICD, но я сразу приложу полный скрин)  
+В результате работы terraform мы получаем следующие ресурсы 
 
 ![](https://github.com/networksuperman/diplomv2/blob/main/img/4.png)  
 
