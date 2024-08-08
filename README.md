@@ -1,17 +1,17 @@
-# diplomv2
-## Доработки по диплому
+# diplomv2  
+## Доработки по диплому  
 
 Так как в первой версии я уже создавал инфраструктуру и устанавливал кластер через terraform и kubespray и в качестве registry использовал DockerHub, решил попробовать через Managed Kubernetes и Container Registry.  
 
-Вся инфраструктура, в том числе бакет, создавалась через terraform
+Вся инфраструктура, в том числе бакет, создавалась через terraform  
 
-[terraform](https://github.com/networksuperman/diplomv2/tree/main/terraform)
+[terraform](https://github.com/networksuperman/diplomv2/tree/main/terraform)  
 
 В результате работы terraform мы получаем следующие ресурсы (LoadBalancer будет создан после деплоя мониторинга и приложения через CICD, но я сразу приложу полный скрин)  
 
 ![](https://github.com/networksuperman/diplomv2/blob/main/img/4.png)  
 
-Проверим кластер
+Проверим кластер  
 
 ![](https://github.com/networksuperman/diplomv2/blob/main/img/2.png)  
 
@@ -23,22 +23,35 @@
 
 Мониторинг 
 
-kube-prometheus задеплоим через Github Actions, отслеживание изменений в terraform также сделаем через CI/CD
+kube-prometheus задеплоим через Github Actions, отслеживание изменений в terraform также сделаем через CI/CD  
 
-[deploy monitoring job](https://github.com/networksuperman/app/actions/runs/10305603510/job/28526821910)
+[deploy monitoring job](https://github.com/networksuperman/app/actions/runs/10305603510/job/28526821910)  
 
 ![](https://github.com/networksuperman/diplomv2/blob/main/img/14.png)  
 
-[deploy terraform job](https://github.com/networksuperman/app/actions/runs/10305568254/job/28526704608]
+[deploy terraform job](https://github.com/networksuperman/app/actions/runs/10305568254/job/28526704608)  
 
-[deploy_kube_prometheus.yml]https://github.com/networksuperman/app/blob/main/.github/workflows/deploy_kube_prometheus.yml
+[deploy_kube_prometheus.yml](https://github.com/networksuperman/app/blob/main/.github/workflows/deploy_kube_prometheus.yml)  
 
-[k8s-ci-cd.yaml](https://github.com/networksuperman/app/blob/main/.github/workflows/k8s-ci-cd.yaml]
+[k8s-ci-cd.yaml](https://github.com/networksuperman/app/blob/main/.github/workflows/k8s-ci-cd.yaml]  
 
-![](https://github.com/networksuperman/diplomv2/blob/main/img/15.png)
+![](https://github.com/networksuperman/diplomv2/blob/main/img/15.png)  
 
+CI/CD  
 
+[deploy app job](https://github.com/networksuperman/app/actions/runs/10305766738/job/28527362904)  
 
+![](https://github.com/networksuperman/diplomv2/blob/main/img/13.png)    
+
+[deploy murge request dev](https://github.com/networksuperman/app/actions/runs/10305796263]  
+
+![](https://github.com/networksuperman/diplomv2/blob/main/img/16.png)    
+
+Несколько версий нашего приложений  
+
+![](https://github.com/networksuperman/diplomv2/blob/main/img/10.png)    
+
+![](https://github.com/networksuperman/diplomv2/blob/main/img/12.png)    
 
 
 
